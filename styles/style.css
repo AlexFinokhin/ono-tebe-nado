@@ -1,15 +1,24 @@
 /* место для вашего кода */
 
+.address {
+  font-size: 18px;
+  line-height: 24.3px;
+  justify-self: end;
+
+  font-style: normal;
+}
+
 .header {
-  display: flex;
-  justify-content: space-around; /* или between */
-  align-items: center;
-  margin: 92px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin: 92px 52px 0;
 }
 
 .header__menu {
   display: flex;
   justify-content: space-between;
+  justify-self: stretch;
 }
 
 .header__links-list {
@@ -19,7 +28,7 @@
 }
 
 .header__links-list-item {
-  padding: 0 30px 0 0;
+  padding: 0 34px 0 0;
 }
 
 .header__links-list-item:last-child {
@@ -32,13 +41,30 @@
 
 .header__link {
   text-underline-offset: 5px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .header__link_active {
   text-decoration: none;
 }
 
+.header__logo {
+  justify-self: center;
+}
+
 .header__logo-image {
   width: 148px;
   height: 105px;
+}
+
+.cover {
+  position: relative;
+  margin: 93px 0 auto;
+  width: 1440px;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
