@@ -8,9 +8,6 @@
   font-style: normal;
 }
 
-.logo {
-}
-
 .overlay {
   position: relative;
   background-size: cover;
@@ -276,14 +273,10 @@
   margin: 180px 50px 90px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
 }
 
 .footer__address {
   justify-self: start;
-}
-
-.footer__menu {
 }
 
 .footer__links-list {
@@ -317,12 +310,6 @@
   gap: 47px;
 
   justify-self: end;
-}
-
-.footer__social-list-item {
-}
-
-.footer__social-link {
 }
 
 .footer__social-icon {
