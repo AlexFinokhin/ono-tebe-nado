@@ -8,6 +8,9 @@
   font-style: normal;
 }
 
+.logo {
+}
+
 .overlay {
   position: relative;
   background-size: cover;
@@ -27,13 +30,22 @@
   background-color: rgb(0 0 0 / 0.5);
   z-index: -1;
 }
+
+.letter-spacing-extended {
+  letter-spacing: 61px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
 /* _________________________________________________ */
 
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  margin: 98px 52px 0;
+  margin: 93px 52px 0;
 }
 
 .header__menu {
@@ -77,7 +89,7 @@
 }
 
 .cover {
-  margin: 99px 0 auto;
+  margin: 91px 0 auto;
 }
 
 .cover__overlay {
@@ -90,7 +102,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 165px 0 147px;
+  padding: 165px 50px 131px;
   color: #fff;
   font-size: 100px;
   font-weight: 700;
@@ -116,23 +128,37 @@
   text-align: end;
 }
 
+.cover__description {
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+}
+
 .cover__description-text {
   color: #fff;
+  align-self: center;
   text-align: center;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
+  word-spacing: 17px;
 }
 
 .cover__button {
-  text-align: center;
+  width: 257px;
+  height: 52px;
+  padding: 0;
+  margin: 0 50px 0 0;
+  color: #fff;
+  background: transparent;
   font-size: 22px;
-  line-height: normal;
   text-transform: uppercase;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
 
 .lots {
-  margin: 166px 50px 0;
+  margin: 180px 50px 0;
 }
 
 .lots__heading {
@@ -147,7 +173,7 @@
   grid-template-columns: repeat(auto-fit, minmax(430px, 0fr));
   gap: 25px;
   justify-content: center;
-  margin: 30px auto;
+  margin: 30px auto 28px;
   list-style: none;
   color: #000;
 }
@@ -196,7 +222,7 @@
   color: #fff;
   line-height: 120%;
   align-self: center;
-  margin: auto 40px 50px;
+  margin: auto 40px 53px;
 }
 
 .lots__look-more-link {
@@ -232,28 +258,25 @@
 .about__container {
   display: flex;
   flex-flow: column wrap;
-  margin: 100px 0 0;
-  width: 100%;
-  height: 100%;
+  margin: 100px 35px 0;
+  justify-content: start;
   align-self: flex-end;
+  gap: 25px;
 }
 
 .about__title {
-  align-self: stretch;
+  align-self: flex-start;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.about__text {
-  margin: 100px 0 0;
+  margin: 0 0 70px;
 }
 
 .footer {
   margin: 180px 50px 90px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  place-items: center;
+
 }
 
 .footer__address {
@@ -261,9 +284,6 @@
 }
 
 .footer__menu {
-  display: flex;
-  justify-content: space-between;
-  justify-self: center;
 }
 
 .footer__links-list {
@@ -295,7 +315,7 @@
   list-style: none;
   text-align: center;
   gap: 47px;
-  place-items: center;
+
   justify-self: end;
 }
 
